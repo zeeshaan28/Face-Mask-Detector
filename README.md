@@ -46,25 +46,22 @@ For this classifier to work properly in all conditions, we need a diverse datase
 ## Results
 
 ![Input Image](images/out.jpg?raw=true "Title")
-<p align="center">
+<p align="left">
  <strong>Input Image</strong>
  </br>
 </br>
 </p>
 
 
-![Output Image](Readme Images/result.jpeg)
-<p align="center">
+![Output Image](images/result.jpeg)
+<p align="left">
  <strong>Output Image</strong>
  </p>
 
  
  
  
-
-
-
-## Future Work
+ ## Future Work
 * Working on including social distancing violation model
 * Speed Optimization
 * Face Mask Classification for Side Views
@@ -81,6 +78,7 @@ Artificial Intelligence has sure come a long way in solving such real world prob
 </br>**Mohammed Zeeshaan**
 <p align="left">
 <a href="mailto:zeeshaanuddin6@gmail.com"><img src="https://github.com/rohanrao619/Icons/blob/master/SVGs/Gmail.svg" height ="45" title="Gmail" alt="mailto:zeeshaanuddin6.com"></a>
+ <a href="https://www.linkedin.com/in/mohammed-zeeshaan"><img src="https://github.com/rohanrao619/Icons/blob/master/SVGs/LinkedIn.svg" height ="45" title="LinkedIn" alt="https://www.linkedin.com/in/mohammed-zeeshaan"></a>
 <a href="https://github.com/zeeshaan28"><img src="https://github.com/rohanrao619/Icons/blob/master/SVGs/GitHub.svg" height ="45" title="GitHub" alt="https://github.com/zeeshaan28"></a>
-<a href="https://www.linkedin.com/in/mohammed-zeeshaan"><img src="https://github.com/rohanrao619/Icons/blob/master/SVGs/LinkedIn.svg" height ="45" title="LinkedIn" alt="https://www.linkedin.com/in/mohammed-zeeshaan"></a>
+
 </p>
