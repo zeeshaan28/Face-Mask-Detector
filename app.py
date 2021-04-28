@@ -202,17 +202,18 @@ def face_mask_detection():
         webcam()
             
     if choice== None:
-        st.markdown(" ### This is a web application designed using machine learning which is used to detect the faces not wearing a mask on a given image or on a webcam.")
-        st.markdown('<h3 align="center"> Please select any of the option from sidebar</h3>', unsafe_allow_html=True)
+        st.write('')
+        st.write(' This project is developed considering the amid second wave of coronavirus in india. Second wave has hit the country very badly, The number of active cases are increasing rapidly and death rate has also increased.')
+        st.write(' Viewing this situation, It has become very important to take precautions like wearing face mask, frequent sanitization and social distancing to protect ourselves and our loved ones from this lethal virus. Health Organsations, government, news channels, everybody is stressing on wearing a mask whenever going out. This is the first important thing we have to do to stop the virus chain and prevent it from harming us.') 
+        st.write('So, This project aims at detecting the people not wearing a mask. A Face Mask Classifier model (ResNet50) is trained and deployed for accurate detection. For aiding the training process, augmented masked faces are generated (using facial landmarks) and blurring effects are also imitated.')
+        st.markdown('<h3 align="center"> For detection, Please select any of the option from sidebar</h3>', unsafe_allow_html=True)
         st.markdown('')
         st.markdown('')
         st.markdown('')
         st.markdown('')
-        st.markdown('')
-        
         st.text('This project is under furthur development, working on the machine learning model which can detect the violation of social distancing.')
         st.text('If interested, can check my github profile for furthur updates.')
-        link = '[GitHub](http://github.com)'
+        link = '[GitHub](https://github.com/zeeshaan28/Face-Mask-Detector)'
         st.markdown(link, unsafe_allow_html=True)
             
 face_mask_detection()
