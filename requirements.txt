@@ -2,7 +2,7 @@ tensorflow
 keras
 imutils
 numpy
-opencv-python
+opencv-contrib-python-headless
 matplotlib
 scipy
 scikit-learn
