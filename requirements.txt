@@ -12,4 +12,3 @@ playsound
 pyobjc
 av
 streamlit_webrtc
-os
