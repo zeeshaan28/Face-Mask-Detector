@@ -3,7 +3,7 @@
 Viewing this situation, It has become very important to take precautions of wearing face mask, frequent sanitization and social distancing to protect ourselves and our loved ones from this lethal virus.
 Health Organsations, Government, News channels, everyone are stressing on wearing a mask whenever going out. This is the first important thing we have to do to stop the virus chain and prevent it from harming us.
 
-So, This project aims at detecting the faces not wearing a mask. A Face Mask Classifier model (ResNet50) is trained and deployed for identifying people not wearing a face mask. For aiding the training process, augmented masked faces are generated (using facial landmarks) and blurring effects are also imitated.
+So, This project is a web application developed using streamlit library which aims at detecting the people not wearing a mask. A Face Mask Classifier model (ResNet50) is trained and deployed for identifying people not wearing a face mask. For aiding the training process, augmented masked faces are generated (using facial landmarks) and blurring effects are also imitated.
 
 
 
@@ -41,6 +41,10 @@ This dataset consists of 4095 images belonging to two classes:
 1930 images
 
 For this classifier to work properly in all conditions, we need a diverse dataset that contains faces in various orientations and lighting conditions. For better results, our dataset should also cover people of different ages and gender. Finding such wide range of pictures having people wearing a face mask becomes a challenging task. Thus we need to apply numerous kinds of Augmentation before we start the training process.
+
+
+## Streamlit App
+This project is created using the modern python library called streamlit, which is used for creating python web application and deploying the model.
 
 
 ## Results
