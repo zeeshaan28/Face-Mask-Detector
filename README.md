@@ -5,7 +5,9 @@ Health Organsations, Government, News channels, everyone are stressing on wearin
 
 So, This project is a web application developed using streamlit library which aims at detecting the people not wearing a mask. A Face Mask Classifier model (ResNet50) is trained and deployed for identifying people not wearing a face mask. For aiding the training process, augmented masked faces are generated (using facial landmarks) and blurring effects are also imitated.
 
+**This app is deployed on online streamlit sharing**
 
+**Wanna have a look???** [Click Here](https://share.streamlit.io/zeeshaan28/face-mask-detector/main/app.py) to check out the app
 
 ## Getting Started
 
@@ -61,6 +63,11 @@ This project is created using the modern python library called streamlit, which 
 <p align="left">
  <strong>Output Image</strong>
  </p>
+ 
+ 
+ **Note:** *Online Streamlit sharing doesn't support the streamlit web_rtc app properly, There might be a little glitch on the deployed platform.*
+ 
+ **The app works completely fine on local server.**
 
  
  
