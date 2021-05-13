@@ -83,7 +83,7 @@ def mask_image():
                         cv2.FONT_HERSHEY_SIMPLEX, 0.45, color, 2)
             cv2.rectangle(image, (startX, startY), (endX, endY), color, 2)
             RGB_img = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-mask_image()
+
 
 
 
@@ -193,6 +193,7 @@ def face_mask_detection():
             saved_image = st.image(image_file, caption='', use_column_width=True)
             st.markdown('<h3 align="center">Image uploaded successfully!</h3>', unsafe_allow_html=True)
             if st.button('Process'):
+                mask_image()
                 st.image(RGB_img, use_column_width=True)
 
     if choice == 'Webcam':
