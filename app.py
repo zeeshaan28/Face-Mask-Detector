@@ -1,6 +1,6 @@
 import streamlit as st
-from streamlit_webrtc import webrtc_streamer, VideoTransformerBase, WebRtcMode
-from PIL import Image, ImageEnhance
+from streamlit_webrtc import webrtc_streamer, VideoTransformerBase , WebRtcMode, ClientSettings
+from PIL import Image
 import numpy as np
 import cv2
 import os
@@ -15,6 +15,10 @@ from tensorflow.keras.models import load_model
 # Setting custom Page Title and Icon with changed layout and sidebar state
 st.set_page_config(page_title ="Face Mask Detector", page_icon='🦈' , layout='centered', initial_sidebar_state='auto')
 
+WEBRTC_CLIENT_SETTINGS = ClientSettings(
+    rtc_configuration={"iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]},
+    media_stream_constraints={"video": True, "audio": True},
+)
 
 def mask_image():
     global RGB_img
@@ -164,7 +168,7 @@ def webcam():
                             
             return image      
         
-        def transform(self, frame: av.VideoFrame) -> np.ndarray:
+        def transform(self, frame: av.VideoFrame) -> av.VideoFrame:
                     image = frame.to_ndarray(format="bgr24")
                     blob = cv2.dnn.blobFromImage(image, 1.0, (300, 300),(104.0, 177.0, 123.0))
                     self._net.setInput(blob)
@@ -173,8 +177,8 @@ def webcam():
                     
                     return output_img
                 
-    webrtc_streamer(key="example",video_transformer_factory=VideoTransformer)
-
+    webrtc_ctx=webrtc_streamer(key="example", mode=WebRtcMode.SENDRECV,
+                        client_settings=WEBRTC_CLIENT_SETTINGS,video_transformer_factory=VideoTransformer,async_transform=True, )
 
 def face_mask_detection():
     st.markdown('<h1 align="center">Face Mask Detection 👦 </h1>', unsafe_allow_html=True)
