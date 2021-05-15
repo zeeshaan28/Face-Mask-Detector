@@ -182,7 +182,7 @@ def webcam():
                         client_settings=WEBRTC_CLIENT_SETTINGS,video_transformer_factory=VideoTransformer,async_transform=True, )
     
 
-@st.cache(allow_output_mutation=True, max_entries=10, ttl=3600)
+
 def face_mask_detection():
     st.markdown('<h1 align="center">Face Mask Detection 👦 </h1>', unsafe_allow_html=True)
     activities = [None,"Image", "Webcam"]
