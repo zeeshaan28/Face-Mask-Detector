@@ -20,7 +20,7 @@ WEBRTC_CLIENT_SETTINGS = ClientSettings(
     media_stream_constraints={"video": True, "audio": True},
 )
 
-@st.cache(allow_output_mutation=True, max_entries=10, ttl=3600)
+@st.cache(allow_output_mutation=True, max_entries=10, ttl=3600, suppress_st_warning=True)
 def mask_image():
     global RGB_img
     # load our serialized face detector model
@@ -91,7 +91,7 @@ def mask_image():
 
 
 
-@st.cache(allow_output_mutation=True, max_entries=10, ttl=3600)
+@st.cache(allow_output_mutation=True, max_entries=10, ttl=3600, suppress_st_warning=True)
 def webcam():
     
     prototxtPath = os.path.sep.join(["face_detector", "deploy.prototxt"])
