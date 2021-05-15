@@ -193,7 +193,7 @@ def face_mask_detection():
     if choice == 'Image':
         st.markdown('<h2 align="center">Detection on Image 📷</h2>', unsafe_allow_html=True)
         st.markdown("### Upload your image here ⬇")
-        image_file = st.file_uploader("Upload an Image", type=["png", "jpg", "jpeg","gif","jfif"])  # upload image
+        image_file = st.file_uploader("Upload an Image", type=["png", "jpg", "jpeg","gif","jfif", 'webp'])  # upload image
         if image_file is not None:
             our_image = Image.open(image_file)  # making compatible to PIL
             im = our_image.save('./images/out.jpg')
