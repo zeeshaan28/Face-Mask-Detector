@@ -91,7 +91,7 @@ def mask_image():
 
 
 
-@st.cache(allow_output_mutation=True, max_entries=10, ttl=3600, suppress_st_warning=True)
+
 def webcam():
     
     prototxtPath = os.path.sep.join(["face_detector", "deploy.prototxt"])
