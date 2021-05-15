@@ -7,7 +7,7 @@ So, This project is a web application developed using streamlit library which ai
 
 **This app is deployed on online streamlit sharing**
 
-**Wanna have a look???** [Click Here](https://share.streamlit.io/zeeshaan28/face-mask-detector/main/app.py) to check out the app
+**Face Mask Detector** [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/zeeshaan28/face-mask-detector/main/app.py)
 
 ## Getting Started
 
@@ -65,9 +65,9 @@ This project is created using the modern python library called streamlit, which 
  </p>
  
  
- **Note:** *Online Streamlit sharing doesn't support the streamlit web_rtc app properly, There might be a little glitch on the deployed platform.*
+ **Note:** *streamlit web_rtc framework which is used to connect the webcam doesn't work on private network(WIFI), It only works on ethernet and mobile data.*
  
- **The app works completely fine on local server.**
+ **Streamlit web_rtc works completely fine on local server.**
 
  
  
